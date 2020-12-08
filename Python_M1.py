@@ -172,6 +172,64 @@ list_triee = sorted(user_list)
 print(list_triee)
 
 
+# In[17]:
+
+
+# exercice 4 questions 1 à 3
+couleurs=["Pique","Trèfle","Carreau","Coeur"]
+valeurs =["2","3","4","5","6","7","8","9","10","valet","dame","roi","as"]
+for x in couleurs :
+   for y in valeurs:
+      print (x+" "+y)
+
+from random import shuffle
+
+
+# In[29]:
+
+
+# exercice 5 question 1 et 2
+with open("diamonds.csv", "r") as f:
+    diamants=f.readlines()
+diamants[10].split(",")
+
+
+# In[31]:
+
+
+#exercice 5 question 3
+with open("diamonds.csv", "r")as f:
+    diamants_100=f.readlines()
+diamants_100[:20]
+
+
+# In[47]:
+
+
+#exercice 5 question 4
+with open("diamonds.csv", "r")as f:
+    diamants_prix=f.readlines(100000)
+    num_columns = len(5) 
+    diamonds.csv(5)
+diamants_prix[:20]
+
+
+# In[53]:
+
+
+#exercice 6 question 1, 2 et 3
+prenom= input ('renseignez votre prénom')
+nom= input ('renseignez votre nom')
+matricule= input ('renseignez votre matricule')
+informationEleve = (prenom, nom, matricule)
+
+while matricule != FIN:
+
+#retourne les prénoms, noms et matricules des élèves
+def retourne_liste_etudiant():
+    return "prenom", "nom", "matricule"
+
+
 # In[ ]:
 
 
