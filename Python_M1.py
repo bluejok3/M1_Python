@@ -285,7 +285,7 @@ for cle, valeur in fr_en.items():
 #exercice 7 question 4
 en_fr = {}
 for cle, valeur in fr_en.items():
-    en_fr[valeur] = cle  # assigne cette cle cette valeur
+    en_fr[valeur] = cle  # assigne cette cle avec cette valeur
 print(en_fr)
 
 
@@ -294,7 +294,7 @@ print(en_fr)
 
 #exercice 7 question 5
 if "brain" in (en_fr): # par défaut dans les clés pour values .values
-    print("la traduction est la")
+    print("la traduction est ici")
 
 
 # In[12]:
@@ -311,11 +311,11 @@ for cle, values in en_fr.items():
 
 #exercice 7 question 7 à 10
 new = {
-    "jardin": ["garden", "gardenne"],
-    "voiture": ["car", "carre"],
-    "soleil": ["sun", "sunne"],
-    "cerveau": ["brain", "brainne"],
-    "chemin" : ["path", "way"]
+    "jardin": ["garden", "Garten"],
+    "voiture": ["car", "Wagen"],
+    "soleil": ["sun", "Sonne"],
+    "cerveau": ["brain", "Gehirn"],
+    "chemin" : ["path", "Pfad"]
     }
 
 for cle, values in new.items():
