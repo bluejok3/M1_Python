@@ -511,3 +511,49 @@ def exo3_2():
     moy = float(som) / len(liste_notes)
 
     print("moyenne " + str(moy), "minimum " + str(mini), "maximum " + str(maxi))
+    
+    #exercice 3 question 3
+
+def exo3_3():
+    liste_notes = []
+    while True:
+        user = input("Entrer une note : (fin pour finir) ")
+        if user == "fin":
+                break
+        else:
+            liste_notes.append(float(user))
+            mini = min(liste_notes)
+            maxi = max(liste_notes)
+            som = 0
+            for notes in liste_notes:
+                som += int(notes)
+            moy = float(som) / len(liste_notes)
+
+    print("moyenne " + str(moy), "minimum " + str(mini), "maximum " + str(maxi))
+
+
+# In[4]:
+
+
+#Exercice 4
+from random import *
+def exo4():
+    alea21 = randint(1,100)
+    correct = False
+    while not correct:
+        user = int(input("Devine le nombre entre 1 et 100 "))
+        if alea21 > user:
+            print("Trop Petit !")
+        elif alea21 < user:
+            print("trop Grand !")
+        elif alea21 == user:
+            break
+
+    if alea21 == user:
+        rejoue = input ("bien joué mek, on rejoue ? (y or n) ")
+        if rejoue == 'y':
+            exo4()
+
+
+# In[ ]:
+
